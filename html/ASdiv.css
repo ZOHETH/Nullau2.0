@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(147, 203, 224);
+}
+#cactus{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    background-color: #f5deb3;  
+}
+#thecactus{
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    left: 160px;
+    top: 120px;
+    border: solid 4px rgb(184, 107, 19);
+    border-bottom: none;
+    border-radius: 50px 50px 0 0;
+    background: linear-gradient(to right,
+     rgb(109, 221, 113) 14.3%,
+     rgb(137, 252, 142) 14.3%,
+     rgb(137, 252, 142) 28.6%,
+     rgb(109, 221, 113) 28.6%,
+     rgb(109, 221, 113) 42.8%,
+     rgb(137, 252, 142) 42.8%,
+     rgb(137, 252, 142) 57.1%,
+     rgb(109, 221, 113) 57.1%,
+     rgb(109, 221, 113) 71.4%,
+     rgb(137, 252, 142) 71.4%,
+     rgb(137, 252, 142) 85.7%,
+     rgb(109, 221, 113) 85.7%);   
+}
+#cactus:after{
+    content: ""; 
+    display: inline-block;
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    top: 203px;
+    left: 135px;
+    border: solid 4px rgb(194, 117, 23);
+    border-radius: 4px 4px 30px 30px;
+    background: linear-gradient(to right,
+    #f4a450 50%,
+    #e89c5b 51%,
+    #e89c5b 77%,
+    #db9356 78%,
+    #db9356 100%
+    );
+    
+}
+#thecactus:before{
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . .";
+    color: white;
+    font-size: 135%;
+    line-height: 75%;
+    text-shadow: 0 0 3px white;
+    display: block;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 115%;
+    padding-top: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+    top: -4px;
+    left: 0px;
+    border-radius: 50%;
+    transform: rotate(180deg)
+}
+#thecactus:after{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 30px;
+    top: 140px;
+    left: -32.5px;
+    border-radius: 50%;
+    border: none;
+    background: #dcc7a1;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#CA{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 400px;
+    text-align: center;
+    background-color: #a49ca9;  
+}
+#CA:after{
+    content: "";
+    display: block;
+    z-index: 999;
+    width: 200px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 100px 330px 40px 5px rgba(0,0,0,0.4);
+}
+#theCA{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 60px;
+    left: 80px;
+    border-radius: 50%;
+    background: radial-gradient(
+        #d00d2c 37%,
+        #d3d3d3 37%,
+        #d3d3d3 56%,
+        #d00d2c 56%
+    );
+    overflow: hidden;
+    box-shadow: 0 5px 0 #a20917;
+    
+}
+#theCA:before{
+    content: "";
+    display: block;
+    z-index: 22;
+    left: 87px;
+    top: 87px;
+    position: absolute;
+    width:65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background: #4575b8;
+    box-shadow: 0 0 50px rgba(255,255,255,0.4);
+}
+#theCA div{
+    position: absolute;
+    z-index: 11;
+    width: 240px;
+    height: 60px;
+    top: 90px;
+    background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.2) 50%,
+    transparent 100%);
+    
+}
+#theCA div:after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 11;
+    width: 240px;
+    height: 60px;
+    top: 0;
+    background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.2) 50%,
+    transparent 100%);
+    transform: rotate(90deg)
+}
+#theCA div:before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 11;
+    width: 240px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    border-radius: 0;    
+    background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(255,255,255,0.4) 50%,
+    transparent 100%);
+    transform: rotate(45deg);
+    box-shadow: 0 0 0;
+}
+#theCA:after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 11;
+    width: 240px;
+    height: 60px;
+    top: 90px;
+    background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(255,255,255,0.4) 50%,
+    transparent 100%);
+    transform: rotate(-45deg)
+}
+#star{
+    position: absolute;
+    display: block;
+    z-index: 99;
+    color: #dddddd;
+    width: 0px;
+    height: 0px;
+    top: 167px;
+    left: 170px;
+    border-right:  30px solid transparent;
+    border-bottom: 21px  solid #dddddd;
+    border-left:   30px solid transparent;
+    box-shadow: 0 1.5px #3e92ff;
+    transform:    rotate(35deg);
+ }
+ #star:before{
+    content: "";
+    display: block;
+    border-bottom: 24px solid #dddddd;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -13.5px;
+    left: -19.5px;
+    transform: rotate(-35deg);
+
+ 
+ }
+ #star:after{
+    content: "";
+    position: absolute;
+    display: block;
+    color: #dddddd;
+    top: 0.9px;
+    left: -31.5px;
+    width: 0px;
+    height: 0px;
+    border-right: 30px solid transparent;
+    border-bottom: 21px solid #dddddd;
+    border-left: 30px solid transparent;
+    transform: rotate(-70deg);
+ }
+
+ /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#window{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    left: 0;
+    top: 400px;
+    background-color: #111;  
+}
+#thewindow{
+    position: absolute;
+    width: 380px;
+    height: 210px;
+    left: 210px;
+    top: 100px;
+    border-top: 20px solid #333;
+    border-left: 20px solid #111;
+    border-right: 20px solid #111;
+    border-bottom: 30px solid #232322;
+    background:
+    linear-gradient(to right,
+    #232322 0,
+    #232322 230px,
+    #333 230px,
+    #333 240px,
+    #111 240px,
+    #111 350px,
+    #333 350px,
+    #333 360px,
+    #232322 360px),
+    linear-gradient(to bottom,
+    #232322 0,
+    #232322 20px,
+    #333 20px);
+}
+#thewindow:before{
+    content: "VACANCY";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 30px;
+    top: 35px;
+    left: 20px;
+    padding: 40px 25px 50px 25px;
+    font-size: 23px;
+    font-weight: 500;
+    color: rgb(250, 207, 142);
+    animation-name: fg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: 10px solid #333;
+    background: linear-gradient(to bottom,
+    #111 0%,#111 2%,
+    #333 3%, #333 4%,
+    #111 4%,#111 8%,
+    #333 8%, #333 9%,
+    #111 9%,#111 13%,
+    #333 13%, #333 14%,
+    #111 14%,#111 18%,
+    #333 18%, #333 19%,
+    #111 19%,#111 23%,
+    #333 23%, #333 24%,
+    #111 24%,#111 28%,
+    #333 28%, #333 29%,
+    #111 29%,#111 33%,
+    #333 33%, #333 34%,
+    #111 34%,#111 38%,
+    #333 38%, #333 39%,
+    #111 39%,#111 43%,
+    #333 43%, #333 44%,
+    #111 44%,#111 48%,
+    #333 48%, #333 49%,
+    #111 49%,#111 53%,
+    #333 53%, #333 54%,
+    #111 54%,#111 58%,
+    #333 58%, #333 59%,
+    #111 59%,#111 63%,
+    #333 63%, #333 64%,
+    #111 64%,#111 68%,
+    #333 68%, #333 69%,
+    #111 69%,#111 73%,
+    #333 73%, #333 74%,
+    #111 74%,#111 78%,
+    #333 78%, #333 79%,
+    #111 79%,#111 83%,
+    #333 83%, #333 84%,
+    #111 84%,#111 88%,
+    #333 88%, #333 89%,
+    #111 89%,#111 93%,
+    #333 93%, #333 94%,
+    #111 94%,#111 98%
+    );
+}
+#window:after{
+    content: "NO";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 180px;
+    left: 270px;
+    padding: 0;
+    font-size: 15px;
+    color: rgb(250, 207, 142);
+    text-shadow: 0 0 2.5px rgb(250, 207, 142),
+    0 0 5px rgb(250, 207, 142),
+    0 0 7px rgb(250, 207, 142),
+    0 0 10px rgb(255, 112, 17),
+    0 0 12px rgb(255, 112, 17),
+    0 0 20px rgb(255, 112, 17),
+    0 0 25px rgb(255, 112, 17),
+    0 0 37px rgb(255, 112, 17);
+    background: transparent;
+    animation-name: ss;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#thewindow:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    left: 229px;
+    border: 11px solid #232322;
+    border-bottom: 11px solid #333;
+    box-shadow: 0 0 20px wheat inset;
+}
+@keyframes fg{
+  from {
+    text-shadow: 0 0 5px rgb(250, 207, 142),
+               0 0 10px  rgb(250, 207, 142),
+               0 0 15px  rgb(250, 207, 142),
+               0 0 20px  rgb(255, 112, 17),
+               0 0 35px  rgb(255, 112, 17),
+               0 0 40px  rgb(255, 112, 17),
+               0 0 50px rgb(255, 112, 17),
+               0 0 75px rgb(255, 112, 17);
+  }
+  to {
+    text-shadow: 0 0 2.5px rgb(250, 207, 142),
+               0 0 5px rgb(250, 207, 142),
+               0 0 7px rgb(250, 207, 142),
+               0 0 10px rgb(255, 112, 17),
+               0 0 12px rgb(255, 112, 17),
+               0 0 20px rgb(255, 112, 17),
+               0 0 25px rgb(255, 112, 17),
+               0 0 37px rgb(255, 112, 17);
+  }
+}
+@keyframes ss{
+    0%{
+        opacity: 1;
+    }
+    8%{
+        opacity: 1;
+    }
+    8%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 1;
+    }
+    18%{
+        opacity: 1;
+    }
+    19%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+}
+

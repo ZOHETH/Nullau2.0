@@ -1,0 +1,472 @@
+*{
+    margin:0;
+    padding:0;
+    }
+ul,li{
+list-style: none;
+}
+
+body{
+    background: #747d93;
+}
+
+#bigone{
+    position: relative;
+    width: 1200.63px;
+    text-align: center;
+    margin: auto;
+    background: #304a64;
+    box-shadow: 0 0 15px;
+}
+/*-----------------------------------------------------------------------header */
+header{
+    height: 211px;
+}
+/*-----------------------------------------------------------------------轮播1  */
+.himg_container{
+
+    position: relative;
+    height: 211px;
+}
+.hp{   
+    width:100%;
+    position:absolute;
+    animation-timing-function: linear;
+    animation-name:fade;
+    animation-iteration-count: infinite;
+    background-size:100%;
+    animation-duration: 30s;
+}
+.hp1{
+    background-image: url(imgs/roll_1.jpg);
+    animation-delay: -1s;
+}
+.hp2{
+    background-image: url(imgs/roll_2.jpg);
+    animation-delay: 5s;
+}
+.hp3{
+    background-image: url(imgs/roll_3.jpg);
+    animation-delay: 11s;
+}
+.hp4{
+    background-image: url(imgs/roll_4.jpg);
+    animation-delay: 17s;
+}
+.hp5{
+    background-image: url(imgs/roll_5.jpg);
+    animation-delay: 23s;
+}
+@keyframes fade{
+    0%{
+    opacity:0;
+    z-index:2;
+    }
+    5%{
+    opacity:1;
+    z-index: 1;
+    }
+    20%{
+    opacity:1;
+    z-index:1;
+    }
+    25%{
+    opacity:0;
+    z-index:0;
+    }
+    100%{
+    opacity:0;
+    z-index:0;
+    }
+}
+.himg,.hp{
+    padding-bottom:18%;
+    color:#ffffff;
+    font-size:100px;
+}
+/*-----------------------------------------------------------------------轮播1结束*/
+.hdownt{
+    position: absolute;
+    z-index:11;
+    top:185px; 
+    color: white; 
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center; 
+    height: 30px; 
+    background-color:rgba(0,0,0,0.6);
+}
+
+/*------------------------------------------------------------------------文字轮播1开始*/
+#hc{
+    position: absolute;
+    z-index:11;
+    top:185px;
+    left: 40px; 
+    color: white; 
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center; 
+    height: 30px; 
+    width: 1120px;
+    overflow: hidden;        
+}
+.roll{
+    position: absolute;
+    width: 2240px;
+    transition: 0.5s;
+    animation: roll1 24s ease-out infinite alternate;
+    animation-direction: normal;
+}
+@keyframes roll1{
+    0%,25%{left: 0px;}
+    27%,50%{left: -280px;}
+    52%,75%{left: -570px;}
+    77%,100%{left: -850px;}
+}
+#hc span{
+    height: 30px;
+    width: 278px;
+    margin: 0 2px;
+    float: left;
+    background-color:rgba(0,0,0,0.6);
+}
+/*---------------------------------------------------------------------文字轮播1结束*/
+
+#ltri/*左箭头*/{
+    text-align: center; 
+    width:10px; 
+    height: 10px; 
+    margin-top: 8px;
+    display: inline-block; 
+    border-right: 1.5px solid white; 
+    border-bottom: 1.5px solid white;
+    transform: rotate(135deg);
+}
+#rtri/*右箭头*/{
+    text-align: center; 
+    width:10px; 
+    height: 10px; 
+    margin-top: 9px;
+    display: inline-block; 
+    border-right: 1.5px solid white; 
+    border-bottom: 1.5px solid white;
+    transform: rotate(-45deg);
+}
+
+/*-------------------------------------------------------下来菜单开始*/
+#htop{
+    position: absolute;
+    width: 768.84px;
+    z-index: 22;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    color: white;      
+}
+#htop>ul{
+    
+    height: 40px;
+}
+#htop>ul li{
+    width: 88px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 250%;
+    background-color:rgba(0,0,0,0);
+}
+.htop_c{
+    width: 100%;
+    height: 100%;     
+    background-color:rgba(0,0,0,0.6);
+}
+.htop_c a{
+    color: white;
+    text-decoration: none;
+}
+#htop_s{
+    width: 153.84px;
+    background-color:rgba(0,0,0,0.6);
+}
+#htop>ul ol{
+    width: 200%;
+    height: 0;
+    font-size: 14px;
+    transition: all linear 0.1s;
+    overflow: hidden;
+    background-color:rgba(0,0,0,0);
+}
+#htop>ul ol li{
+    padding-left: 4%;
+    width: 200%;
+    height: 40px;
+    text-align: left;
+    background-color:rgba(0,0,0,0.6);
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+#htop>ul ol li a{
+    color: white;
+    text-decoration: none;
+}
+#htop>ul li:hover ol{
+    height: 360px;
+    transition: all linear 0.3s;
+    transition-timing-function: ease-out;
+}
+#htop>ul ol li:hover{
+    padding-left: 10%;
+    color: rgb(31, 210, 255);
+}
+/*----------------------------------------------------------下拉菜单结束*/
+
+/*---------------------------------------------------------------------header结束*/
+
+
+/*---------------------------------------------------------------------------main开始*/
+#mid{
+    height: 411px;
+    background-color: white;
+    padding: 10px 5px;
+}
+
+hr{
+    margin: 8px 0;
+    border: 0.8px solid #e0e0e0;
+}
+.tit{
+    margin-left: 0;
+    text-align: left;
+    color:#032b83;
+}
+#mid span{
+    position: absolute;
+    font-size:12px;
+    font-weight: bold;
+    color:#032b83;
+    right: 10px;
+}
+div#tableC {
+    display: table;
+} 
+div#tableR {
+    display: table-row;
+}
+#leftC{
+    display: table-cell;
+    padding: 10px;
+    position: relative;
+    width: 455.76px;
+    height: 390px;
+    border: 0.8px solid #e0e0e0;
+}
+
+/*--------------------------------------------------------------------------轮播二开始*/
+#container{
+        position: relative;
+        height: 150px;
+        width: 220px;
+        overflow: hidden;
+}
+#photo img{
+    left: 0;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    width: 220px;
+}
+#photo{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index:11;
+    width: calc(230px*5);
+    animation: roll2 20s ease-out infinite alternate;
+    animation-direction: normal;
+    transition: 2s;
+}
+@keyframes roll2{
+    0%,20%{left: 0;color:rgb(19, 188, 255);}
+    25%,40%{left: -220px;}
+    45%,60%{left: -440px;}
+    65%,80%{left: -660px;}
+    85%,99%{left: -880px;}
+    100%{left: 0;}
+}
+.num{  
+    position:absolute;
+    margin: 0;
+    z-index:99;  
+    display:inline-block;  
+    top:120px;
+    border-radius:100%; 
+    background: rgba(0,0,0,0.6); 
+    width:15px;
+    height:15px;  
+    line-height:15px;  
+    cursor:pointer;
+    font-size: 12px;  
+    color:white;  
+    text-align:center;  
+    animation-name: focus;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+} 
+.num1{
+    animation-delay: 0s;
+}
+.num2{
+    animation-delay: 4s;
+}
+.num3{
+    animation-delay: 8s;
+}
+.num4{
+    animation-delay: 12s;
+}
+.num5{
+    animation-delay: 16s;
+}
+@keyframes focus{
+    0%{color:rgb(19, 188, 255);}
+    20%{color:rgb(19, 188, 255);}
+    21%{color:white;}
+}
+.num:hover+a{animation-play-state:paused;color:rgb(19, 188, 255);}  
+.num:hover,#photo:hover{animation-play-state:paused;}  
+
+#a1:hover ~ #photo{animation: roll21 .5s ease-out forwards; }  
+#a2:hover ~ #photo{animation: roll22 .5s ease-out forwards; }  
+#a3:hover ~ #photo{animation: roll23 .5s ease-out forwards; }  
+#a4:hover ~ #photo{animation: roll24 .5s ease-out forwards; }  
+#a5:hover ~ #photo{animation: roll25 .5s ease-out forwards; }  
+@keyframes roll21 {0%{left: 0;}100%{left:0;}}  
+@keyframes roll22 {0%{left: -220px;}100%{left:-220px;}}  
+@keyframes roll23 {0%{left: -440px;}100%{left:-440px;}}  
+@keyframes roll24 {0%{left: -660px;}100%{left:-660px;}}  
+@keyframes roll25 {0%{left: -880px;}100%{left:-880px;}}  
+/*----------------------------------------------------------------------轮播二结束*/
+
+/*--------------------------------------------------------------------文字轮播二开始*/
+.news_t{
+    text-align: left;
+    padding: 0 10px;
+    position: absolute;
+    height: 149px;
+    width: 187px;
+    top: 50px;
+    left: 230px;
+    font-size: 14px;
+}
+.new h4 a{
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+.new h4 a:hover{
+    color: rgb(26, 26, 126);
+}
+.news_t p{
+    font-size: 11px;
+    margin: 10px 0;
+    color: #777777;
+}
+.new{
+    position: absolute;
+    height: 149px;
+    width: 187px;
+    top: 0;
+    opacity: 0;
+    animation-timing-function: linear;
+    animation-name: fade_n;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+.new1{
+    animation-delay: -1s;
+}
+.new2{
+    animation-delay: 3s;
+}
+.new3{
+    animation-delay: 7s;
+}
+.new4{
+    animation-delay: 11s;
+}
+.new5{
+    animation-delay: 15s;
+}
+#time{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+#time p{
+    margin: 0;
+}
+@keyframes fade_n{
+    0%{
+    opacity:0;
+    z-index:99;
+    }
+    5%{
+    opacity:1;
+    z-index:99;
+    }
+    23%{
+    opacity:1;
+    z-index:99;
+    }
+    25%{
+    opacity:0;
+    z-index:0;
+    }
+    100%{
+    opacity:0;
+    z-index:0;
+    }
+}
+/*----------------------------------------------------------------------文字轮播二结束*/
+   
+#midC{
+    display: table-cell;
+    padding: 0;
+    width: 426px;
+    height: 397px;
+}
+.mid{
+    position: relative;
+    width: 426px;
+    height: 115px;
+    margin: 0 4px 4px 4px;
+    padding: 10px;
+    border: 0.8px solid #e0e0e0;
+
+}
+
+#rightC{
+    display: table-cell;
+    padding: 10px;
+    position: relative;
+    margin-left: 10px;
+    width: 345.76px;
+    height: 390px;
+    border: 0.8px solid #e0e0e0;
+}
+#footer{
+    height: 100px;
+    padding: 15px;
+    background-color: #032f55;
+    color: white;
+}
+#footer hr{
+    margin: 15px 0;
+    border: 0.4px solid #e0e0e0;
+}
+#footer_top{
+    text-align: center;
+    font-size: 12px;
+}
